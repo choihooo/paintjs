@@ -7,6 +7,7 @@ const savebtn = document.getElementById("jsSave");
 
 let painting = false;
 let filling = false;
+let coloring = false;
 
 
 const INITIAL_COLOR = "#2c2c2c";
@@ -111,6 +112,7 @@ if(canvas){
 
 // console.log(Array.from(colors))
 Array.from(colors).forEach(color => color.addEventListener("click",  handleColorClick))
+
 
 if(range){
     range.addEventListener("input", handleRangeChange);
